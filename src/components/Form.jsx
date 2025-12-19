@@ -51,6 +51,9 @@ function App() {
             <p className="repo-desc">
               {repo.description || "No description available"}
             </p>
+                    <span>⭐ {repo.stargazers_count}</span>
+                    <span>🍴 {repo.forks_count}</span>
+                    {repo.language && <span>💻 {repo.language}</span>}
           </div>
         ))}
       </div>
