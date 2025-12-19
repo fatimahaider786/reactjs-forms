@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: bisque;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.header-section {
+  width: 100%;
+  background-color: palegreen;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.header-section h1 {
+  max-width: 1300px;
+  margin-left: 80px;  
+  margin-top: 0;
+  color: black;
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+.search-area {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-area form {
+  max-width: 1300px;
+  margin-left: 80px; 
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-area input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-area button {
+  padding: 12px 24px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.results-wrapper {
+  width: 100%;
+  background-color: #f3f4f6;
+  min-height: calc(100vh - 160px);
+}
+
+.results-container {
+  max-width: 1300px;
+  margin-left: 80px;   /* 👈 MAIN MAGIC LINE */
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.repo-card {
+  background-color: salmon;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.repo-card a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.repo-card a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
