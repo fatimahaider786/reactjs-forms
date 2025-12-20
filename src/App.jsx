@@ -6,7 +6,8 @@ function App() {
     <div>
       {/* HEADER */}
       <div className="header-section">
-      </div>
+  <h1>GitHub Repository Search</h1>
+</div>
 
       {/* FORM + RESULTS */}
       <Form />
